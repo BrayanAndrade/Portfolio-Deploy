@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Brayan Andrade" />
+    <meta name="description" content="Desenvolvedor Front-End e UI Designer" />
+    <meta name="keywords"
+        content="sites, web, desenvolvimento, programador, developer, brayanandrade, front-end, frontend, designer, ux, ui, webdesign, website, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="Brayan Andrade 2021" />
+    <meta property="og:image" content="https://iuricode.vercel.app/assets/image/preview.png" />
+    <meta property="og:title" content="Portfolio | Brayan Andrade" />
+    <meta property="og:description" content="Front-End Developer | Ui Designer" />
+    <title>Brayan Andrade | Portfolio</title>
+
+
+   
+    <link rel="icon" href="img/webicon.png">
+    <link rel="stylesheet" href="scss/glider.min.css">
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Berkshire+Swash&family=Inter:wght@100;400;800&family=Montserrat:wght@100;200;400;600;800&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./scss/style.css">
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  
+
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal({ duration: 1500 })
+    </script>
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+
+    <section class="corte">
+        <div class="luas" id="esq"></div>
+        <div class="luas" id="dir"></div>
+        <p class="scroll">Scroll To Explore</p>
+        <i class="fa fa-angle-double-down"></i>
+    </section>
+
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="maxWidth">
+                <div class="logo">
+                    <a href="#" class="logoimg">
+                        Brayan.
+                    </a>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#home" data-text="Home" class="menuBtn">Home</a></li>
+                    <li><a href="#about" data-text="About" class="menuBtn">About</a></li>
+                    <li><a href="#services" data-text="Services" class="menuBtn">Services</a></li>
+                    <li><a href="#skills" data-text="Skills" class="menuBtn">Skills</a></li>
+                    <li><a href="#projects" data-text="Projects" class="menuBtn">Projects</a></li>
+
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </ul>
+
+             
+
+                <div class="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+
+        <div class="maxWidth">
+            <div class="container homez-in">
+
+                <div class="firstContent">
+                    <p class="text headline">Hello World, my name is</p>
+                    <h2 class="title tagline">Brayan Andrade</h2>
+                    <p class="subTitle punchline">And i'm a <span class="typing"></span>
+                    </p>
+
+                    <div class="sociais lastline">
+                        <button>
+                            <a href="https://www.linkedin.com/in/brayanandrade/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i></a>
+                        </button>
+
+                        <button>
+                            <a href="https://github.com/brayanandrade/" target="_blank">
+                                <i class="fab fa-github"></i></a>
+                        </button>                   
+                    </div>
+                </div>
+                <div class="secondContent bodyline">
+                    <img src="img/braia.png" alt="profile picture">
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <section class="about" id="about">
+        <div class="maxWidth">
+            <div class="container">
+                <div class="left headline">
+                    <div data-tilt data-tilt-axis="y" data-tilt data-tilt-axis="y" class="img">
+                        <img src="./img/3ddd.png" alt="profile photo">
+                    </div>
+
+                    <div class="shadow"></div>
+                </div>
+
+                <div class="right">
+                    <h2 class="title tagline">Sobre mim
+                        <button>
+                            <a href="download/BrayanAndradeCV.pdf" target="_blank" download="BrayanAndradeCV" class="punchline">
+                                <span class="iconify" data-icon="fluent:arrow-download-16-filled" data-inline="false"
+                                    data-height="18"></span>
+                                <span>Curriculo</span>
+                            </a>
+                        </button>
+                    </h2>
+
+                    <p class="text punchline">Meu nome é Brayan de Andrade, tenho 19 anos, atualmente morando no Rio de
+                        Janeiro, e sou apaixondo por arte, musica e tecnologia.
+                        Atuei como freelancer em Designer Gráfico por 1 ano e decidi estudar programação unindo o melhor
+                        do web e do Design. <br> <br>
+
+                        Formado recentemente pela Recode Pro em Desenvolvedor Full-Stack onde além de aprender novas linguagens pude desenvolver projetos
+                        individuais e em squad, onde aprendi
+                        diversos conceitos relcionados a soft-skills, Devops & Agile Culture.</p>
+
+
+                    <!-- <button> <a href="https://www.linkedin.com/in/brayanandrade/"  class="punchline">Linkedin</a></button> -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <div class="maxWidth">
+            <h2 class="headline">Services</h2>
+            <div class="container">
+
+                <div class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="fluent:design-ideas-16-regular" data-inline="false"
+                            data-width="100" data-height="100"></span>
+                    </div>
+
+                    <div class="text content">
+                        <div class="icon">
+                            <i class="far fa-window-maximize"></i>           
+                        </div>
+                        <h4>Ui Design</h4>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="box tagline">
+                    <div class="iconBox">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Full Stack Developer</h4>
+
+                    </div>
+                </div>
+
+
+                <div class="box tagline">
+                    <div class="iconBox">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+
+                    <div class="text content">
+                        <div class="icon">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h4>Graphic Design</h4>
+
+                    </div>
+                </div>
+
+                <div class="box tagline">
+                    <div class="iconBox">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+
+                    <div class="text content">
+                        <div class="icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h4>Web Design</h4>
+                       
+                    </div>
+
+
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <div class="skills" id="skills">
+        <div class="maxWidth">
+            <h2 class="title headline">My skills</h2>
+            <div class="container">
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-inline="false" data-icon="icomoon-free:html-five"></span>
+
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-inline="false" data-icon="icomoon-free:html-five"></span>
+                            <h3>HTML</h3>
+                        </div>
+
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>1 year experience</p>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-inline="false" data-icon="simple-icons:css3"></span>
+                    </div>
+
+
+
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-inline="false" data-icon="simple-icons:css3"></span>
+                            <h3>CSS</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>1 year experience</p>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="simple-icons:javascript" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="simple-icons:javascript" data-inline="false"></span>
+                            <h3>Javascript</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>7 months experience</p>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                            <h3>React</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>3 months experience</p>
+                            </div>
+                            <div class="line react"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                            <h3>React<br>Native</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>4 months experience</p>
+                            </div>
+                            <div class="line reactnative"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="file-icons:tailwind" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="file-icons:tailwind" data-inline="false"></span>
+                            <h3>Tailwind</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>1 month experience</p>
+                            </div>
+                            <div class="line tail"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="gg:figma" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="gg:figma" data-inline="false"></span>
+                            <h3>UX/UI<br>Design</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>6 months experience</p>
+                            </div>
+                            <div class="line ux"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="simple-icons:adobephotoshop" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="simple-icons:adobephotoshop" data-inline="false"></span>
+                            <h3>Graphic <br> Design</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>3 years experience</p>
+                            </div>
+                            <div class="line graphic"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="cib:sass" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="cib:sass" data-inline="false"></span>
+                            <h3>Sass</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>3 months experience</p>
+                            </div>
+                            <div class="line sass"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="box tagline">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="bi:bootstrap-fill" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="bi:bootstrap-fill" data-inline="false"></span>
+                            <h3>Bootstrap</h3>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+
+                                <p>6 months experience</p>
+                            </div>
+                            <div class="line bootstrap"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box tagline" style="opacity: 0.1;">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="cib:angular" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="bx:bxs-lock-alt" data-inline="false"></span>
+                            <h3>Em Breve..</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="box tagline" style="opacity: 0.1;">
+                    <div class="iconBox">
+                        <span class="iconify" data-icon="whh:java" data-inline="false"></span>
+                    </div>
+                    <div class="text content">
+                        <div class="icon">
+                            <span class="iconify" data-icon="bx:bxs-lock-alt" data-inline="false"></span>
+                            <h3>Em Breve..</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+
+        <div class="row">
+            <div class="portfolio-filter">
+                <button type="button" title="Show all" class="portfolio-filter-btn active" data-filter="all">all
+                </button>
+                <button type="button" title="Filter by Front-End" class="portfolio-filter-btn "
+                    data-filter="front-end">frontend </button>
+                <button type="button" title="Filter by Back-End" class="portfolio-filter-btn  "
+                    data-filter="back-end">backend </button>
+                <button type="button" title="Filter by Mobile" title="Show all" class="portfolio-filter-btn "
+                    data-filter="mobile">mobile</button>
+                <!-- <button type="button" class="portfolio-filter-btn" data-filter="">ux/ui</button>
+            <button type="button" class="portfolio-filter-btn" data-filter="">Graphic Design</button> -->
+            </div>
+            <!-- <div class="filter-status">
+                <p>filtering <span>all</span>works</p>
+            </div> -->
+        </div>
+
+        <div class="row portfolio-items">
+            <div class="portfolio-item" data-category="back-end,front-end">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/morada.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">morada</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Morada é um projeto que visa minimizar o déficit habitacional do
+                            Rio de Janeiro através da união entre vizinhanças. Nosso objetivo é estimular
+                            e facilitar o contato e colaboração nas comunidades, permitindo que os
+                            usuários permutem entre si materiais e serviços de construção e manutenção
+                            para suas casas, promovendo pequenas reformas no bairro, a reutilização de
+                            materiais e a ajuda mútua.
+                        </p>
+
+                            <img src="./img/moradafull.png" alt="">
+                            <h3>Desenvolvedores</h3>
+                            <div class="integrantes">  
+                                <a href="https://github.com/BrayanAndrade">
+                                    <img src="https://avatars.githubusercontent.com/u/71559092?s=100&v=4" alt="">
+                                </a>                           
+                               
+                                <a href="https://github.com/matheusrdads">
+                                    <img src="https://avatars.githubusercontent.com/u/59870106?s=100&v=4" alt="">
+                                </a>
+                                <a href="https://github.com/lucaxsantox">
+                                    <img src="https://avatars.githubusercontent.com/u/71901354?s=100&v=4" alt="">
+                                </a>
+                                <a href="http://github.com/giovannacollares">
+                                    <img src="https://avatars.githubusercontent.com/u/68913380?s=100&v=4" alt="">
+                                </a>
+                                <a href="http://github.com/wellington1603?tab=followers">
+                                    <img src="https://avatars.githubusercontent.com/u/63172170?s=100&v=4" alt="">
+                                </a>
+                            </div>
+                          
+                            <!-- <img src="./img/moradaserv.png" alt="">
+                            <img src="./img/moradasobre.png" alt="">
+                            <img src="./img/moradamur.png" alt=""> -->
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>4 Dec 2020</span></p>
+                        <p>Technologies Used- 
+                            <span>PHP, HTML, CSS, jQuery, Bootstrap, JavaScript, MySQL</span>
+                        </p>
+                        <p>View Online- <span><a href="http://morada.infinityfreeapp.com/" target="_blank">morada.infinityfreeapp.com</a></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/moradamobile.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">morada mobile</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Morada é um projeto que visa minimizar o déficit habitacional do
+                            Rio de Janeiro através da união entre vizinhanças. Nosso objetivo é estimular
+                            e facilitar o contato e colaboração nas comunidades, permitindo que os
+                            usuários permutem entre si materiais e serviços de construção e manutenção
+                            para suas casas, promovendo pequenas reformas no bairro, a reutilização de
+                            materiais e a ajuda mútua.
+                        </p>
+
+                        <img src="./img/moradamob.gif" alt="">
+
+                        <h3>Desenvolvedores</h3>
+                        <div class="integrantes">  
+                            <a href="https://github.com/BrayanAndrade">
+                                <img src="https://avatars.githubusercontent.com/u/71559092?s=100&v=4" alt="">
+                            </a>                           
+                           
+                            <a href="http://github.com/wellington1603?tab=followers">
+                                <img src="https://avatars.githubusercontent.com/u/63172170?s=100&v=4" alt="">
+                            </a>
+                        </div>
+                      
+                            
+                    </div>
+                  
+                    <div class="generl-info">
+                        <p>Created - <span>13 Mar 2021</span></p>
+                        <p>Technologies Used- <span>React Native</span></p>
+                        <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/tesla.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">Tesla clone</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Tesla Clone é um projeto para exercitar conhecimentos de React recriando a 
+                            página inicial da <a href="https://www.tesla.com/">Tesla</a></p>
+
+                            <img src="./img/teslaclone.gif">
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>1 Abril 2021</span></p>
+                        <p>Technologies Used- <span>React Js</span></p>
+                        <p>Role - <span>Front-End</span></p>
+                        <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/pm.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">Plantmanager</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Aplicação mobile desenvolvida durante a <a style="color:rgb(0, 255, 157)" href="http://nextlevelweek.com/" >NLW 5</a> para o controle e acompanhamento de regar as plantas</p>
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>24 Abril 2021</span></p>
+                        <p>Technologies Used- <span>React Native, Expo, TypeScript</span></p>
+                     
+                        <a href="download/plantmanager.apk" target="_blank" download="plantmanager" class="punchline" style="color:rgb(0, 255, 157)">
+            
+                           <p>Download APK</p>
+                        </a>
+                     
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/temclima.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">TemClima</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Uma aplicação em React Native integrada com a <a style="color:rgb(56, 215, 255)"href="https://hgbrasil.com/status/weather">HG Weather</a>  que fornece dados 
+                            de previsão do tempo e condições climáticas atuais para uma cidade.</p>
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>12 Mar 2021</span></p>
+                        <p>Technologies Used- <span>React Native, Expo, Axios</span></p>
+                      
+                        <!-- <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/movit.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">Moveit</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit. Esse qui quas
+                            consequuntur labore debitis eum id ipsum laudantium expedita soluta. Libero eaque nesciunt
+                            nemo magnam nam, et earum corporis commodi fugiat unde nisi itaque pariatur tempora ad vero
+                            iste sunt officiis hic, suscipit temporibus consequatur ipsum labore magni? Soluta aliquam
+                            fuga atque temporibus quas nam facere suscipit veniam rerum repellendus voluptates odio
+                            dignissimos natus pariatur quia illum dolores, nobis beatae aliquid. Ipsum adipisci
+                            obcaecati nemo id et fugit, nobis laboriosam eveniet debitis eligendi ipsam hic excepturi
+                            maiores quaerat officia. Est voluptates ipsa esse numquam quos et molestias eos.
+                        </p>
+                            <img src="./img/movit.gif">
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>4 Dec 2020</span></p>
+                        <p>Technologies Used- <span>React</span></p>
+                        <!-- <p>Role - <span>Front-End</span></p> -->
+                        <!-- <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/podcastr.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">Podcastr</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Um projeto em Next js para ouvir podcast sobre programação desenvolvido durante a NLW #5</p>
+
+                            <img src="./img/podcast.png">
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>22 Abril 2021</span></p>
+                        <p>Technologies Used- <span>React js, Next js, TypeScript, Sass</span></p>
+                        <!-- <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+<!-- 
+
+            <div class="portfolio-item" data-category="front-end">
+                <div class="portfolio-thumbnail">
+                    <img src="./img/kages.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">KAGES REDUX</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit. Esse qui quas
+                            consequuntur labore debitis eum id ipsum laudantium expedita soluta. Libero eaque nesciunt
+                            nemo magnam nam, et earum corporis commodi fugiat unde nisi itaque pariatur tempora ad vero
+                            iste sunt officiis hic, suscipit temporibus consequatur ipsum labore magni? Soluta aliquam
+                            fuga atque temporibus quas nam facere suscipit veniam rerum repellendus voluptates odio
+                            dignissimos natus pariatur quia illum dolores, nobis beatae aliquid. Ipsum adipisci
+                            obcaecati nemo id et fugit, nobis laboriosam eveniet debitis eligendi ipsam hic excepturi
+                            maiores quaerat officia. Est voluptates ipsa esse numquam quos et molestias eos.</p>
+
+                            <img src="./img/kages.gif">
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>4 Dec 2020</span></p>
+                        <p>Technologies Used- <span>Html, Css</span></p>
+                        <p>Role - <span>Front-End</span></p>
+                        <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                    </div>
+                </div>
+            </div> -->
+
+
+            
+            <!-- <div class="portfolio-item" data-category="front-end,back-end">
+                <div class="portfolio-thumbnail">
+                    <img src="https://entredicastecnologia.com/wp-content/uploads/2020/08/VIGIA-DE-PRECO.png" alt="">
+                    <button type="button" class="btn more-info-btn">more info</button>
+                </div>
+                <h3 class="portfolio-title">FullStack Eletro</h3>
+                <div class="portfolio-details">
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit. Esse qui quas
+                            consequuntur labore debitis eum id ipsum laudantium expedita soluta. Libero eaque nesciunt
+                            nemo magnam nam, et earum corporis commodi fugiat unde nisi itaque pariatur tempora ad vero
+                            iste sunt officiis hic, suscipit temporibus consequatur ipsum labore magni? Soluta aliquam
+                            fuga atque temporibus quas nam facere suscipit veniam rerum repellendus voluptates odio
+                            dignissimos natus pariatur quia illum dolores, nobis beatae aliquid. Ipsum adipisci
+                            obcaecati nemo id et fugit, nobis laboriosam eveniet debitis eligendi ipsam hic excepturi
+                            maiores quaerat officia. Est voluptates ipsa esse numquam quos et molestias eos.</p>
+
+                            <img src="./img/kages.gif">
+                    </div>
+                    <div class="generl-info">
+                        <p>Created - <span>4 Dec 2020</span></p>
+                        <p>Technologies Used- <span>Html, Css</span></p>
+                        <p>Role - <span>Front-End</span></p>
+                        <p>View Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+            
+<!-- portfollio item end -->
+        </div>
+
+       
+    </section>
+
+
+    <div class="portfolio-popup">
+        <div class="pp-overlay"></div>
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <h2 class="pp-counter"></h2>
+                    <button type="button" title="close" class="close-btn pp-close-btn"></button>
+                    <div class="pp-thumbnail">
+                        <img src="./img/brayan.png" alt="pp-thumbnail" class="tst123">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body">
+                </div>
+
+
+                <div class="pp-footer">
+                    <div class="pp-footer-left hidden">
+                      <button 
+                        type="button" 
+                        title="Prev Work" 
+                        class="btn pp-prev-btn"
+                        > 
+                        <i class="fas fa-arrow-left"></i>
+                       </button>
+
+                      <h3></h3>
+                      <img src="./img/bryvn2.jpg" alt="prev work thumbnail">
+                    </div>
+                    <div class="pp-footer-right hidden">
+                        <button type="button" title="Next Work" class="btn pp-next-btn"> <i class="fas fa-arrow-right"></i></button>
+                        <h3></h3>
+                        <img src="./img/bryvn.jpg" alt="next work thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+   
+
+
+    <footer>
+
+      <span> Created with Love 🖤 |
+            <span class="far fa-copyright"></span>
+            2021 All Rights Reserved.</span>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/brayanandrade/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/brayanandrade/" target="_blank">
+                    <i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/bryannkkk/" target="_blank">
+                    <i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+
+  
+
+    <script type="text/javascript">
+        // let progress = document.getElementById('progressbar')
+        // let totalHeight = document.body.scrollHeight - window.innerHeight;
+        // window.onscroll = function () {
+        //     let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        //     progress.style.height = progressHeight + "%";
+        // }
+
+
+        var esq = document.getElementById("esq")
+        window.addEventListener("scroll", function () {
+            esq.style.top = -window.pageYOffset + "px";
+        })
+        var dir = document.getElementById("dir")
+        window.addEventListener("scroll", function () {
+            dir.style.top = window.pageYOffset + "px";
+        })
+
+
+
+
+
+    </script>
+
+
+
+
+
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="./js/glider.js"></script> -->
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/glider.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+
+</body>
+
+</html>
