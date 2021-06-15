@@ -27,11 +27,14 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
   
   --nav: #020202;
   --theme: #f1ffcc;
-  
+
+   --textWhite: rgba(126, 126, 126, 0.596);
   --textLight: rgb(163, 163, 163);
   --textMedium: rgb(192, 192, 192);
   --textDark: rgb(236, 236, 236);
+
   --purple: #7728FF;
+  --pink: #ff00c8;
 
 
   --box: -7px -7px 20px 0 rgba(255, 255, 255, 0.1),
@@ -73,11 +76,13 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
     --theme: #001f53;
 
 
+    --textWhite: rgba(84, 104, 134, 0.397);
     --textLight: rgb(90, 123, 173);
     --textMedium: rgb(54, 54, 54);
     --textDark: rgb(46, 48, 66);
     
     --purple: #7728FF;
+    --pink: #ff00c8;
 
 
 

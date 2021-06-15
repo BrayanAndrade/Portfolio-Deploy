@@ -21,8 +21,7 @@
             .logo a{ 
                 // text-indent: -9999px;
                color: transparent;
-                font-family: 'Berkshire Swash', cursive;
-                font-size: 35px;
+                font: italic bold 35px 'Playfair Display', serif, ;
                 @include TextGradient;
                 
     
@@ -48,9 +47,9 @@
                     
     
                     &:hover {
-                        color: var(--purple);
-                       
-                        border-bottom: 2px solid var(--purple);
+                        color: var(--pink);
+                        transition: color 0.9s ease;
+                        border-bottom: 2px solid var(--pink);
                        
                     }
                 }

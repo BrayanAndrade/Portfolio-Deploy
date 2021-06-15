@@ -16,10 +16,12 @@
   --boxShadowD: #1b1b1b;
   --nav: #020202;
   --theme: #f1ffcc;
+  --textWhite: rgba(126, 126, 126, 0.596);
   --textLight: rgb(163, 163, 163);
   --textMedium: rgb(192, 192, 192);
   --textDark: rgb(236, 236, 236);
   --purple: #7728FF;
+  --pink: #ff00c8;
   --box: -7px -7px 20px 0 rgba(255, 255, 255, 0.1),
   7px 7px 20px 0 rgba(3, 3, 3, 0.8);
   --boxHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.192),
@@ -44,10 +46,12 @@
   --boxShadowD:#c4d7fd;
   --nav: #fff,#1868f3;
   --theme: #001f53;
+  --textWhite: rgba(84, 104, 134, 0.397);
   --textLight: rgb(90, 123, 173);
   --textMedium: rgb(54, 54, 54);
   --textDark: rgb(46, 48, 66);
   --purple: #7728FF;
+  --pink: #ff00c8;
   --box: -7px -7px 20px 0 rgb(255,255,255),
     7px 7px 20px 0 rgba(40, 56, 136, 0.2);
   --boxHover: inset  -7px -7px 20px 0 rgb(255,255,255),
@@ -187,8 +191,7 @@ html {
 
 .navbar .maxWidth .logo a {
   color: transparent;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 35px;
+  font: italic bold 35px "Playfair Display", serif;
   color: transparent;
   background-image: -webkit-gradient(linear, right top, left top, from(#ff00c8), color-stop(#8605ff), color-stop(#6200ff), color-stop(#591dff), color-stop(#d83cff), to(#ff00c8));
   background-image: linear-gradient(to left, #ff00c8, #8605ff, #6200ff, #591dff, #d83cff, #ff00c8);
@@ -242,8 +245,10 @@ html {
 }
 
 .navbar .maxWidth .menu li a:hover {
-  color: var(--purple);
-  border-bottom: 2px solid var(--purple);
+  color: var(--pink);
+  -webkit-transition: color 0.9s ease;
+  transition: color 0.9s ease;
+  border-bottom: 2px solid var(--pink);
 }
 
 .navbar .maxWidth .menuBtn {
@@ -476,7 +481,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   background-color: var(--bgDark);
-  height: 180vh;
+  height: 170vh;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 500px;
@@ -508,20 +513,20 @@ html {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  line-height: 60px;
   padding-top: 5%;
 }
 
 .home .container .firstContent .text {
   font-size: 20px;
-  color: var(--textLight);
+  color: var(--textWhite);
+  letter-spacing: 3px;
 }
 
 .home .container .firstContent .title {
   font-size: 50px;
   font-weight: bold;
   color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font: italic bold 55px "Playfair Display", serif;
   color: transparent;
   background-image: -webkit-gradient(linear, right top, left top, from(#ff00c8), color-stop(#8605ff), color-stop(#6200ff), color-stop(#591dff), color-stop(#d83cff), to(#ff00c8));
   background-image: linear-gradient(to left, #ff00c8, #8605ff, #6200ff, #591dff, #d83cff, #ff00c8);
@@ -546,12 +551,14 @@ html {
 
 .home .container .firstContent .subTitle {
   font-size: 30px;
-  color: var(--textDark);
+  color: var(--textMedium);
   font-family: 'Montserrat', sans-serif;
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 .home .container .firstContent .subTitle span {
-  color: #7e96bb;
+  color: var(--purple);
   font-weight: bold;
 }
 
@@ -559,7 +566,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 45px;
 }
 
 .home .container .firstContent .sociais button a {
@@ -607,7 +614,8 @@ html {
 }
 
 .home .container .secondContent {
-  width: 100%;
+  width: 40%;
+  height: 40%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -617,6 +625,27 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.home .container .secondContent:hover {
+  -webkit-box-shadow: 0px 0px 50px 5px rgba(119, 40, 255, 0.22);
+  box-shadow: 0px 0px 50px 5px rgba(119, 40, 255, 0.22);
+}
+
+.home .container .secondContent img {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.home .container .secondContent img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .hidden1 {
@@ -1039,10 +1068,21 @@ html {
   display: block;
   -webkit-filter: drop-shadow(20px 10px 2px #00000033);
           filter: drop-shadow(20px 10px 2px #00000033);
-  background: -webkit-linear-gradient(#ff00c8, var(--purple));
+  background: -webkit-linear-gradient(var(--pink), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.services .maxWidth .container .box .content .icon i:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: drop-shadow(0px 0px 0px #00000033);
+          filter: drop-shadow(0px 0px 0px #00000033);
 }
 
 .services .maxWidth .container .box i {
@@ -1055,10 +1095,17 @@ html {
 }
 
 .services .maxWidth .container .box .text {
-  font-size: 25px;
-  font-weight: 500;
   margin: 10px 0 7px 0;
+}
+
+.services .maxWidth .container .box .text h4 {
+  font-size: 20px;
+  font-weight: 500;
   color: var(--textLight);
+}
+
+.services .maxWidth .container .box .text h4:hover {
+  color: var(--textDark);
 }
 
 .skills {
@@ -1416,7 +1463,7 @@ html {
 
 .projects .row .portfolio-filter .portfolio-filter-btn:hover:not(.active) {
   background: var(--bgDark);
-  color: #ff00c8;
+  color: var(--pink);
   -webkit-box-shadow: var(--boxsmallHover);
           box-shadow: var(--boxsmallHover);
 }
@@ -1815,7 +1862,7 @@ html {
 }
 
 .portfolio-popup .pp-inner .pp-footer i:hover {
-  color: #ff00c8;
+  color: var(--pink);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -2078,7 +2125,7 @@ footer ul li a:hover {
     margin: auto !important;
   }
   .home .firstContent .sociais button a {
-    width: 400px !important;
+    width: 450px !important;
   }
   .skills .container .box {
     width: calc(30% - 8px);
@@ -2094,23 +2141,24 @@ footer ul li a:hover {
   }
   .container .firstContent {
     width: 50% !important;
+    text-align: start;
+  }
+  .container .firstContent .line {
+    border-left: 4px solid var(--purple);
+    padding-left: 50px;
   }
   .container .firstContent .sociais {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    width: 100% !important;
-  }
-  .container .firstContent .sociais button {
-    margin-right: 15px !important;
-    margin-left: 15px !important;
+    width: 80% !important;
+    -webkit-box-pack: first baseline;
+        -ms-flex-pack: first baseline;
+            justify-content: first baseline;
+    margin-right: 180px;
   }
   .container .firstContent .sociais button a {
     width: 200px !important;
-  }
-  .secondContent {
-    padding-left: 150px !important;
-    width: 50%;
   }
   .about .container {
     display: -webkit-box;
