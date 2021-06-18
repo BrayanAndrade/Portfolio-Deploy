@@ -43,6 +43,7 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
   --boxHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.192),
   inset 7px 7px 20px 0 rgba(3, 3, 3, 0.9);
 
+  --imgHover:   0px 0px 50px 5px rgba(119,40,255,0.22);
 
 
   --boxsmall: -4px -4px 13px 0 rgba(255, 255, 255, 0.1),
@@ -101,7 +102,7 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
     --boxsmallHover: inset  -7px -7px 20px 0 rgb(255,255,255),
     inset 7px 7px 6px 0 rgba(40, 56, 136, 0.4);
 
-
+    --imgHover:   0px 0px 50px 5px var(--textLight); 
 
    
 
