@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(window).scroll(function() {
-      if (this.scrollY > 500) {
+      if (this.scrollY > 550) {
           $('.navbar').addClass("sticky");         
       } else {
           $('.navbar').removeClass("sticky");                 
@@ -81,12 +81,19 @@ function toggleTheme() {
 });
 
 
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '50px',
+  duration: 2000,
+  reset: true
+});
 
 ScrollReveal().reveal('.headline')
-ScrollReveal().reveal('.bodyline', { delay: 200 })
-ScrollReveal().reveal('.tagline', { delay: 500 })
-ScrollReveal().reveal('.punchline', { delay: 800 })
-ScrollReveal().reveal('.lastline', { delay: 1100 })
+ScrollReveal().reveal('.bodyline', { delay: 200 });
+ScrollReveal().reveal('.tagline', { delay: 400 });
+ScrollReveal().reveal('.punchline', { delay: 500 });
+ScrollReveal().reveal('.lastline', { delay: 600 });
+
 
 
 
@@ -153,7 +160,6 @@ function filterItems(filterBtn){
    }
  });
    portfolioItems = document.querySelectorAll(".portfolio-item.show");
-   console.log(portfolioItems);
 }
 
 
@@ -249,6 +255,31 @@ function changePortfolioItem(direction){
   
 
 }
+
+console.log("%c Brayan Andrade Portfolio ","color: #ff00c8; font-size: 1.8rem");
+
+
+
+console.log('%c ', 'padding:200px 150px; font-size: 0; background:url("https://64.media.tumblr.com/e2f866088c2d40f462e9d7007d7b6aa6/tumblr_npynjklT3F1u8qul0o1_500.gifv") no-repeat; background-size: cover;')
+
+// var res = `
+// ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
+// ⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕
+// ⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂
+// ⠟⣡⣾⣿⣿⣿⣿⣦⣑⠝⢿⣿⣿⣿⣿⣿⡵⢁⣤⣶⣶⣿⢿⢿⢿⡟⢻⣤⢑⢂
+// ⣾⣿⣿⡿⢟⣛⣻⣿⣿⣿⣦⣬⣙⣻⣿⣿⣷⣿⣿⢟⢝⢕⢕⢕⢕⢽⣿⣿⣷⣔
+// ⣿⣿⠵⠚⠉⢀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢕⢕⢕⢕⢕⢕⣽⣿⣿⣿⣿
+// ⢷⣂⣠⣴⣾⡿⡿⡻⡻⣿⣿⣴⣿⣿⣿⣿⣿⣿⣷⣵⣵⣵⣷⣿⣿⣿⣿⣿⣿⡿
+// ⢌⠻⣿⡿⡫⡪⡪⡪⡪⣺⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
+// ⠣⡁⠹⡪⡪⡪⡪⣪⣾⣿⣿⣿⣿⠋⠐⢉⢍⢄⢌⠻⣿⣿⣿⣿⣿⣿⣿⣿⠏⠈
+// ⡣⡘⢄⠙⣾⣾⣾⣿⣿⣿⣿⣿⣿⡀⢐⢕⢕⢕⢕⢕⡘⣿⣿⣿⣿⣿⣿⠏⠠⠈
+// ⠌⢊⢂⢣⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢐⢕⢕⢕⢕⢕⢅⣿⣿⣿⣿⡿⢋⢜⠠⠈
+// ⠄⠁⠕⢝⡢⠈⠻⣿⣿⣿⣿⣿⣿⣿⣷⣕⣑⣑⣑⣵⣿⣿⣿⡿⢋⢔⢕⣿⠠⠈
+// ⠨⡂⡀⢑⢕⡅⠂⠄⠉⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢔⢕⢕⣿⣿⠠⠈
+// ⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈ 
+                                                       
+// `
+// console.log(res)
 
 
 // $(document).ready(function(){

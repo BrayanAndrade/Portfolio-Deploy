@@ -8,11 +8,15 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
 :root {
   //backgroundColors
   --bgLight:#3E3E3E;
-  --bgMedium: #202020;
-  --bgDark: #181818;
+  --bgMedium: #2a3244;
+  --bgDark: #07080c;
   --bgBlack: #000000;
   --bgShadow: #181818b9;
   --bgNav: #ffffffb9;
+  --icon: #1b202e;
+  --iconShadow: #000000;
+
+  --bgBox: #7728FF10;
 
   
   --boxMedium:#232323;
@@ -24,48 +28,57 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
 
 
 
-  
-  --nav: #020202;
+  --bgNav: #171b24; 
+  --nav: #000000;
   --theme: #f1ffcc;
 
-   --textWhite: rgba(126, 126, 126, 0.596);
-  --textLight: rgb(163, 163, 163);
-  --textMedium: rgb(192, 192, 192);
+   --textWhite: rgba(87, 102, 189, 0.247);
+  --textLight: rgba(183, 194, 255, 0.541);
+  --textMedium: rgba(142, 138, 189, 0.541);
   --textDark: rgb(236, 236, 236);
 
-  --purple: #7728FF;
+  --purple: #682fca;
+  --purple2: #5c25bb;
   --pink: #ff00c8;
+  --pink2: #e654c6;
 
 
-  --box: -7px -7px 20px 0 rgba(255, 255, 255, 0.1),
-  7px 7px 20px 0 rgba(3, 3, 3, 0.8);
+  --box: -7px -7px 20px 0 rgba(255, 255, 255, 0.055),
+  7px 7px 20px 0 rgb(3, 3, 3);
 
-  --boxHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.192),
-  inset 7px 7px 20px 0 rgba(3, 3, 3, 0.9);
+  --boxHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.11),
+  inset 7px 7px 20px 0 rgb(0, 0, 0);
 
-  --imgHover:   0px 0px 50px 5px rgba(119,40,255,0.22);
+  --imgHover:   0px 0px 50px 5px rgba(12, 0, 32, 1);
 
 
-  --boxsmall: -4px -4px 13px 0 rgba(255, 255, 255, 0.1),
-  4px 4px 20px 0 rgba(3, 3, 3, 0.8);
+  --boxsmall: -4px -4px 13px 0 rgba(219, 219, 219, 0.144),
+  4px 4px 20px 0 rgba(3, 3, 3, 0.993);
 
-  --boxsmallHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.192),
-  inset 7px 7px 20px 0 rgba(3, 3, 3, 0.9);
+  --boxsmallHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.096),
+  inset 7px 7px 20px 0 rgba(3, 3, 3, 0.973);
 
 
   --bgImg: url("../img/bgDark.png");
+  --bgBody: url("../img/bgBlack2.jpg");
+  --bgHome: url("../img/crl.jpg");
 
   } 
   
   .darkMode:root {
     --bgLight: #F0FAFF;
-    --bgMedium: #E7F0FF;
-    --bgDark: #d0dffa;
-    --bgBlack: #8eb5ff;
+    --bgMedium: #e2f2ff;
+    --bgDark: #b4cefd;
+    --bgBlack: #8bb4ff;
     --bgShadow: #e7f0ffb9;
     --bgNav: #000000b9;
+    --icon: #d2deff;
+    --iconShadow: #7ba9ff;
 
   
+    --bgBox: #7728FF01;
+
+
     --boxMedium:#e9f1ff;
     --boxDark: #c4d8ff;
 
@@ -73,30 +86,34 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
     --boxShadowM:#ebf3ff;
     --boxShadowD:#c4d7fd;
 
-    --nav: #fff,#1868f3;
+  
+    --bgNav: #ccdeff; 
+    --nav: #79a0e9;
     --theme: #001f53;
 
 
-    --textWhite: rgba(84, 104, 134, 0.397);
+    --textWhite: rgba(118, 148, 192, 0.918);
     --textLight: rgb(90, 123, 173);
-    --textMedium: rgb(54, 54, 54);
+    --textMedium: rgb(25, 25, 58);
     --textDark: rgb(46, 48, 66);
     
-    --purple: #7728FF;
+    --purple: #682fca;
+    --purple2: #7944d4;
     --pink: #ff00c8;
+    --pink2: #ee65d0;
 
 
 
 
 
     
-    --box: -7px -7px 20px 0 rgb(255,255,255),
-    7px 7px 20px 0 rgba(40, 56, 136, 0.2);
+    --box: -7px -7px 20px 0 rgba(255, 255, 255, 0.541),
+    7px 7px 20px 0 rgba(40, 56, 136, 0.404);
 
-    --boxHover: inset  -7px -7px 20px 0 rgb(255,255,255),
-    inset 7px 7px 20px 0 rgba(40, 56, 136, 0.8);
+    --boxHover: inset  -7px -7px 20px 0 rgba(255, 255, 255, 0.726),
+    inset 7px 7px 20px 0 rgba(40, 56, 136, 0.966);
 
-    --boxsmall: -7px -7px 20px 0 rgb(255,255,255),
+    --boxsmall: -7px -7px 20px 0 rgba(255, 255, 255, 0.527),
     7px 7px 20px 0 rgba(40, 56, 136, 0.2);
 
     --boxsmallHover: inset  -7px -7px 20px 0 rgb(255,255,255),
@@ -109,6 +126,8 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
 
 
     --bgImg: url("../img/bgLight.png");
+    --bgBody: url("../img/bgWhite2.jpg");
+    --bgHome: url("../img/bgHome.jpg");
 
   }
 
@@ -141,6 +160,27 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
 @mixin TextGradient{
   color: transparent;
   background-image: linear-gradient(to left, #ff00c8, #8605ff,  #6200ff,#591dff, #d83cff, #ff00c8 );
+  -webkit-background-clip: text;
+  --webkit-background-size: 500%;
+  background-size: 500%;
+  animation: gradient 6s linear infinite;
+
+  @keyframes gradient {
+      0%{
+          background-position: 0 100%;
+      }
+      50%{
+         background-position: 100% 0;
+     }
+     100%{
+         background-position: 0 100%;
+     }
+  }
+}
+
+@mixin PortfolioGrdient{
+  color: transparent;
+  background-image: linear-gradient(to left, #ffffff, #ffffff,  #ffffff,#bdbdbd, #ffffff, #ffffff );
   -webkit-background-clip: text;
   --webkit-background-size: 500%;
   background-size: 500%;

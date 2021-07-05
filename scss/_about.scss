@@ -1,0 +1,142 @@
+.about{
+    //border-top: 2px solid var(--purple);
+    // background: url(../img/crl.jpg);
+   background: linear-gradient(to right, var(--bgMedium),var(--bgDark));
+   background-image: var(--bgBody);
+   background-size: contain;
+    transform: translateY(-100px);
+    margin-bottom: -100px;
+    -webkit-box-shadow: 0px -10px 34px -1px rgba(0,0,0,0.57); 
+    box-shadow: 0px -10px 34px -1px rgba(0,0,0,0.09);
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+      .maxWidth{
+          .container{
+              // border: 1px solid rgb(0, 255, 136);          
+              // display: flex;
+             
+  
+              padding: 150px 0 150px 0;
+                  .left{
+                      img{
+                          animation: float 1.5s ease-in-out infinite;
+                          @keyframes float {
+                              0%{
+                                  transform: translateY(0px)
+                              }
+                              50% {
+                                  transform: translateY(-15px)
+                              }
+                              100% {
+                                  transform: translateY(0px)
+                              }
+                          }
+                      }
+                      .shadow{
+                          background: var(--bgBlack);
+                          opacity: 0.2;
+                          width: 180px;
+                          height: 30px;
+                          border-radius: 50%;
+                          margin:auto;
+                          filter: blur(4px);
+                          animation: shadow 1.5s ease-in-out infinite;
+                          @keyframes shadow {
+                              0%{
+                                  transform: scale(1.3);
+                                  opacity: 0.6;
+                              }
+                              50% {
+                                  transform: scale(1);
+                                  opacity: 0.3;
+                              }
+                              100% {
+                                  transform: scale(1.3);
+                                  opacity: 0.6;
+                              }
+                          }
+                  };
+              }
+              .right{
+                  margin: auto;
+                  transition: all 1.3s ease;
+                  // border: 1px solid rgb(0, 255, 136);
+  
+                  h2{
+                     @include TextGradient;
+                      text-align: left;
+                      font-family: 'Montserrat', sans-serif;
+                      font-weight: 800;
+  
+                      button{
+                          float:right;
+                          transform: translateY(-30px);
+                      }
+  
+                      
+                  }
+  
+                  p{
+                      color: var(--textLight);
+                      text-align: left;
+                      line-height: 25px;
+                      font-family: 'Montserrat', sans-serif;
+                  }
+                 
+                  a{
+                      @include botao;
+                      background: linear-gradient(145deg, var(--bgDark), var(--bgMedium));
+                      box-shadow:  5px 5px 10px var(--bgDark),
+                                   -5px -5px 10px var(--bgMedium);
+                      
+                      padding: 10px 10px;
+                      // background: var(--bgLight);
+                      font-size: 14px;
+                      margin-top: 30px;
+                      border-radius: 50%;
+                      width: 40px;
+                      height: 40px;
+                      
+                      // transform: translateX(-100%);
+  
+                      &:hover{
+                          background:  var(--bgMedium);
+                          box-shadow: inset 5px 5px 10px var(--bgDark),
+                                      inset -5px -5px 10px var(--bgMedium);
+                          transform: scale(1.1);
+                          .iconify{
+                              color: var(--purple);
+                              animation: floatbtn 1s ease-in-out infinite;
+                           
+                              @keyframes floatbtn {
+                                  0%{
+                                      transform: translateY(3px)
+                                  }
+                                  50% {
+                                      transform: translateY(-3px)
+                                  }
+                                  100% {
+                                      transform: translateY(3px)
+                                  }
+                              }
+                          }
+                          
+                      }
+  
+                      &:active{
+                          transform: scale(0.6);
+                      }
+  
+                      span{
+                          opacity: 0;
+                      }
+  
+                      .iconify{                     
+                          color: var(--purple);
+                          font-size: 18px;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
