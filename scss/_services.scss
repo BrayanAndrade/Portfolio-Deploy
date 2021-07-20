@@ -4,7 +4,7 @@
     background-size: contain;
     //background-attachment: fixed;
     height: 100%;
-    // transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 
     .maxWidth{
         h2{
@@ -40,10 +40,12 @@
                 transition: all 0.5s;
                 // box-shadow: var(--box);
                 background: linear-gradient(145deg, var(--bgMedium), var(--bgDark));
-                //box-shadow:  9px 9px 18px var(--boxShadowD),
-                //-9px -9px 18px var(--boxShadowM);
+                // box-shadow:  9px 9px 18px var(--boxShadowD),
+                // -9px -9px 18px var(--boxShadowM);
                 // border-top: 1px solid rgba(255,255,255,0.3);
                 // border-left: 1px solid rgba(255,255,255,0.3);
+                -webkit-box-shadow: -7px -6px 28px 4px var(--boxShadowM); 
+                box-shadow: -7px -6px 28px 4px var(--boxShadowM);
            
 
 
@@ -76,9 +78,13 @@
                   
                   
                  
-                }  
+                } 
+                &:hover{
+                    -webkit-box-shadow: 1px 11px 28px 4px #000000; 
+                    box-shadow: 1px 11px 28px 4px var(--bgBlack);
+                } 
                 &:hover i{
-                    filter: drop-shadow(5px 5px 2px   #000000);
+                    filter: drop-shadow(5px 5px 2px   var(--bgBlack));
                 } 
                 h4{
                     transition: all 0.5s ease-in;

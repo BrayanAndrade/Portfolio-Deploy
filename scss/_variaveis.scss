@@ -12,29 +12,32 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
   --bgDark: #07080c;
   --bgBlack: #000000;
   --bgShadow: #181818b9;
-  --bgNav: #ffffffb9;
-  --icon: #1b202e;
-  --iconShadow: #000000;
 
-  --bgBox: #7728FF10;
+
+  --GradiendDark: #536081;
+  --GradientWhite: #a6b2d1;
+  
+  --icon: #1b202e;
+  --iconBox: #7728FF10;
 
   
   --boxMedium:#232323;
   --boxDark: #1e1e1e;
 
  
-  --boxShadowM: #272727;
-  --boxShadowD: #1b1b1b;
+  --boxShadowM: #141720;
+  --boxShadowD: #17141b;
 
 
 
   --bgNav: #171b24; 
   --nav: #000000;
-  --theme: #f1ffcc;
+  
 
-   --textWhite: rgba(87, 102, 189, 0.247);
-  --textLight: rgba(183, 194, 255, 0.541);
-  --textMedium: rgba(142, 138, 189, 0.541);
+  --textWhite: rgba(114, 127, 197, 0.438);
+  --textLight: rgb(102, 111, 163);
+  --textMedium: rgba(183, 194, 255, 0.541);
+  --textMediumGradient: rgb(167, 177, 233);
   --textDark: rgb(236, 236, 236);
 
   --purple: #682fca;
@@ -49,7 +52,7 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
   --boxHover: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.11),
   inset 7px 7px 20px 0 rgb(0, 0, 0);
 
-  --imgHover:   0px 0px 50px 5px rgba(12, 0, 32, 1);
+  --imgHover:   0px 0px 50px 5px rgb(0, 0, 0);
 
 
   --boxsmall: -4px -4px 13px 0 rgba(219, 219, 219, 0.144),
@@ -178,24 +181,62 @@ $fontPrincipal: 'Arial', monospace, 'Montserrat', sans-serif;
   }
 }
 
-@mixin PortfolioGrdient{
+@mixin menuGradient{
   color: transparent;
-  background-image: linear-gradient(to left, #ffffff, #ffffff,  #ffffff,#bdbdbd, #ffffff, #ffffff );
+ 
+  background-image: linear-gradient(to left, var(--GradiendDark), var(--GradiendDark),  var(--GradiendDark), var(--GradientWhite), var(--GradiendDark), var(--GradiendDark) );
   -webkit-background-clip: text;
   --webkit-background-size: 500%;
   background-size: 500%;
-  animation: gradient 6s linear infinite;
+  animation: menugradient 6s infinite;
 
-  @keyframes gradient {
+  @keyframes menugradient {
+      100%{
+          background-position: 0 100%;
+      }
+      0%{
+         background-position: 100% 0;
+     }
+   
+  }
+}
+
+@mixin PortfolioGradient{
+  color: transparent;
+ 
+  background-image: linear-gradient(to left, #beccf0, #beccf0,  #fff, #beccf0, #beccf0, #beccf0 );
+  -webkit-background-clip: text;
+  --webkit-background-size: 500%;
+  background-size: 500%;
+  animation: portfoliogradient 2s infinite;
+
+  @keyframes portfoliogradient {
       0%{
           background-position: 0 100%;
       }
-      50%{
+      100%{
          background-position: 100% 0;
      }
-     100%{
-         background-position: 0 100%;
+   
+  }
+}
+
+@mixin pGradient{
+  color: transparent;
+  background-image: linear-gradient(to right,  var(--textMedium),  var(--textMediumGradient) );
+  -webkit-background-clip: text;
+  --webkit-background-size: 400%;
+  background-size: 100%;
+  animation: pgradient 3s;
+
+  @keyframes pgradient {
+      0%{
+          background-position: 0 100%;
+      }
+      100%{
+         background-position: 100% 0;
      }
+   
   }
 }
 

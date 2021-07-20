@@ -31,7 +31,7 @@
                     // text-indent: -9999px;
                     color: transparent;
                     font: italic bold 35px 'Playfair Display', serif, ;
-                    @include TextGradient;
+                    @include  menuGradient;
                     
                 }
                    
@@ -109,7 +109,9 @@
                 margin-left: 15px;
                 width: 23px;
                 height: 23px;
-                cursor: pointer;
+                pointer-events: none;
+                opacity: 0;
+                cursor: not-allowed;
                 color: var(--purple);
                 background: transparent;
                 box-shadow:  2px 2px 4px var(--bgBlack),-2px -2px 4px rgba( 255, 255, 255, 0 );
